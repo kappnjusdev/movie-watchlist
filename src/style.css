@@ -1,0 +1,196 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  height: 30vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("/header.png");
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header > h1 {
+  font-size: 2.675rem;
+}
+
+header > a {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: white;
+  text-decoration: none;
+}
+
+#search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: -22px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  width: min(
+    75%,
+    560px
+  ); /* responsive: shrinks on small screens, caps on large */
+  background-color: white;
+  border-radius: 6px; /* pill shape */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  overflow: hidden; /* clips children to the pill */
+}
+
+.search-icon {
+  flex-shrink: 0;
+  filter: invert(40%);
+  height: 1rem;
+}
+
+.search-wrapper input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 14px 10px;
+  font-size: 14px;
+  background: transparent;
+  font-weight: 500;
+}
+
+.search-wrapper button {
+  border: none;
+  border-left: 1px solid #d1d5db;
+  background: white;
+  padding: 14px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.search-wrapper button:hover {
+  background: #f9fafb;
+}
+
+
+main {
+  height: 70vh;
+  padding: 40px;
+  margin-top: -12px;
+}
+
+.default,
+.null-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dfdddd;
+}
+
+.default {
+  flex-direction: column;
+}
+
+.null-search {
+  text-align: center;
+}
+
+.null-search > h2 {
+  font-size: 18px;
+  max-width: 320px;
+}
+
+.movie-container {
+  display: flex;
+  border-bottom: 2px solid #e5e7eb;
+  padding: 20px 0;
+}
+
+.movie-info-container {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.movie-poster {
+  height: 150px;
+  width: 100px;
+  border-radius: 2px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.movie-header {
+  display: flex;
+  align-items: center;
+}
+
+.movie-header > h3 {
+  font-weight: 500;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.movie-header > img {
+  padding-right: 4px;
+}
+
+.movie-rating {
+  font-size: 12px;
+}
+
+h3,
+p {
+  margin: 0;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+}
+
+.add-movie-icon {
+  height: 1rem;
+  filter: invert(100%);
+}
+
+.add-movie-btn {
+  display: flex;
+  background: none;
+  border: none;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.movie-plot {
+  font-size: 14px;
+}
+
+/** watchlist styles */
+.add-movies-btn {
+  background: none;
+  border: none;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.add-movies-icon {
+  height: 18px;
+  filter: invert(100%);
+}
